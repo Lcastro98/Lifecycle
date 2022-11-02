@@ -8,7 +8,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class Pagina1Component implements OnInit, OnChanges, DoCheck, AfterContentInit, 
     AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-
+  
+  nombre: string = 'Lorena';
+  
   constructor() { 
     console.log('constructor');
   }
@@ -43,6 +45,10 @@ export class Pagina1Component implements OnInit, OnChanges, DoCheck, AfterConten
 
   ngOnInit(): void {
     console.log('ngOnInit');
+  }
+
+  guardar() {
+
   }
 
 }
